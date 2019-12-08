@@ -1,2 +1,17 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<body>
+	<h1>Editing Book</h1>
+	<form class="edit_book">
+		<div class="field">
+			<label for="book_title">Title</label>
+			<p><%= f.text_field :title %></p>
+		</div>
+		<div class="field">
+			<label for="book_body">Body</label>
+			<P><%= f.text_area :body %></P>
+		</div>
+		<div class="action">
+			<%= f.submit 'Update Book' %>
+		</div>
+		<% end %>
+	</form>
+</body>

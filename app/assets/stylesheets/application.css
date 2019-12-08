@@ -45,3 +45,52 @@ p, ol, ul, td {
     line-height: 18px;
     margin: 33px;
 }
+
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h2 {
+    margin: 16.185px 0;
+}
+form {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+.field, .action {
+    margin-bottom: 10px;
+}
