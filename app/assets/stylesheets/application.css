@@ -54,6 +54,7 @@ body {
 }
 
 table {
+    width: 100%;
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
@@ -61,23 +62,33 @@ table {
 }
 
 thead {
+    width: 100%;
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+th {
+    height: 24px;
+    padding-bottom: 5px
+}
+th:first-child {
+    width: 189px;
+}
+th:nth-child(2) {
+    width: 396px;
 }
 
-th {
-    display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 5px;
+tbody tr {
+    display: table-row;
+    width: 740px;
+    height: 26px;
+}
+
+td {
+    padding: 0 5px 7px 5px;
+    height: 26px;
+    text-align: center
 }
 
 h2 {
@@ -93,4 +104,14 @@ label {
 
 .field, .action {
     margin-bottom: 10px;
+}
+.button {
+    display: inline-block;
+}
+.partition {
+    display: inline-block;
+}
+
+input {
+    font: 400 11px system-ui;
 }

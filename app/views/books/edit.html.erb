@@ -1,17 +1,23 @@
 <body>
 	<h1>Editing Book</h1>
+	<%= form_for(@book, url:"/books/#{@book.id}") do |f| %>
 	<form class="edit_book">
 		<div class="field">
-			<label for="book_title">Title</label>
-			<p><%= f.text_field :title %></p>
+			<label for="book_title">Title:</label>
+			<%= f.text_field :title %>
 		</div>
 		<div class="field">
-			<label for="book_body">Body</label>
-			<P><%= f.text_area :body %></P>
+			<label for="book_body">Body:</label>
+			<%= f.text_area :body %>
 		</div>
 		<div class="action">
 			<%= f.submit 'Update Book' %>
 		</div>
-		<% end %>
 	</form>
+	<% end %>
+	<div class="button">
+		<a class="eddit"><%= link_to 'Show',book_path(@book.id) %></a>
+		<div class="partition">|</div>
+		<a class="back" href="/books">Back</a>
+	</div>
 </body>

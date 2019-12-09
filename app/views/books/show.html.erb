@@ -1,11 +1,18 @@
 <body>
+	<% if flash[:notice] %>
+		<p><%= flash[:notice] %></p>
+	<% end %>
 	<p>
 		<strong>Title:</strong>
-		<p><%= @book.title %></p>
-		<strong>Body:</strong>
-		<p><%= @book.body %></p>
+		<%= @book.title %>
 	</p>
-	<a href="#">Edit</a>
-	<div class="partition">|</div>
-	<a href="#">Back</a>
+	<p>
+		<strong>Body:</strong>
+		<%= @book.body %>
+	</p>
+	<div class="button">
+		<a class="edit"><%= link_to 'Edit', edit_book_path(@book.id) %></a>
+		<div class="partition">|</div>
+		<a class="back" href="/books">Back</a>
+	</div>
 </body>
