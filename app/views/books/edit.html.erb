@@ -1,7 +1,6 @@
 <body>
 	<h1>Editing Book</h1>
 	<%= form_for(@book, url:"/books/#{@book.id}") do |f| %>
-	<form class="edit_book">
 		<div class="field">
 			<label for="book_title">Title:</label>
 			<%= f.text_field :title %>
@@ -13,7 +12,6 @@
 		<div class="action">
 			<%= f.submit 'Update Book' %>
 		</div>
-	</form>
 	<% end %>
 	<div class="button">
 		<a class="eddit"><%= link_to 'Show',book_path(@book.id) %></a>

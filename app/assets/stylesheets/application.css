@@ -54,7 +54,7 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 740px;
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
@@ -72,6 +72,7 @@ th {
     height: 24px;
     padding-bottom: 5px
 }
+
 th:first-child {
     width: 189px;
 }
@@ -88,7 +89,23 @@ tbody tr {
 td {
     padding: 0 5px 7px 5px;
     height: 26px;
-    text-align: center
+    text-align: left;
+}
+td:first-child {
+    width: 46px;
+}
+td:nth-child(2) {
+    width: 36px;
+}
+td:last-child {
+    width: 61px;
+}
+
+a:link {
+    color: #333;
+}
+a:visited {
+    color: gray;
 }
 
 h2 {
@@ -114,4 +131,8 @@ label {
 
 input {
     font: 400 11px system-ui;
+}
+
+.flash_message {
+    color: limegreen;
 }
